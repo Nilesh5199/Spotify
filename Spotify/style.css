@@ -1,0 +1,149 @@
+body{
+background-color: blanchedalmond;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex ;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+nav .logo img{
+    width:45px;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+li{
+    font-size: 14px ;
+    margin: 12px;
+    color: blanchedalmond;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    margin: 10px 150px ;
+    border-radius: 10px;
+    background: url(https://source.unsplash.com/1600x900/?musicstudio,music,headphone)
+}
+h1{
+    margin: 5px 10px;
+}
+.bottom{
+   
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+} 
+#progressbar{
+  background-color: rgb(0, 0, 0);
+    width: 1100px;
+    cursor: pointer;
+}
+.icons{
+   margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songitem{
+    height: 34px;
+    display: flex;
+    background-color:rgb(255, 246, 246);
+    width: 40%;
+    border-radius: 10px;
+    margin: 15px 10px;
+    color: black;
+    justify-content: space-between;
+}
+.songitem span{
+    margin: 0px 30px;
+}
+.songitem img{
+    margin: 3px;
+    border-radius: 34px;
+}
+.list{
+    margin: 10px;
+}
+span i{
+    cursor: pointer;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    width: 42px;
+}
+.songinfo{
+    position: absolute;
+    left: 230px;
+}
+
+  
+@media only screen and (max-width: 1000px){
+    h1{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .navbar{
+        width: 100%;    
+    }
+    .container{
+        min-height: 70vh;
+        margin: 30px;
+    }
+    .bottom #progressbar{
+        margin-top: 15px;
+        width: 50%;
+    }
+    .songitem{
+        margin: 10px 5px;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        font-size: 10px;
+    }
+    .songitem img{
+        margin: 8px 5px;
+        height: 20px;
+    }
+    .songname{
+        display: contents;
+        margin: auto;
+        font-size: 10px;
+    }
+    .listplay{
+        margin: auto;
+    }
+    .songinfo{
+        margin-bottom:17px;
+        position: absolute;
+        left: 110px;
+    }
+    .icons{
+        margin-top: 33px;
+        margin-bottom: 10px;
+        }
+   
+}
